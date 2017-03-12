@@ -25,6 +25,7 @@ namespace ICSharpCode.AvalonEdit.CodeCompletion
 			WindowStyleProperty.OverrideMetadata(typeof(CompletionWindowBase), new FrameworkPropertyMetadata(WindowStyle.None));
 			ShowActivatedProperty.OverrideMetadata(typeof(CompletionWindowBase), new FrameworkPropertyMetadata(Boxes.False));
 			ShowInTaskbarProperty.OverrideMetadata(typeof(CompletionWindowBase), new FrameworkPropertyMetadata(Boxes.False));
+			ResizeModeProperty.OverrideMetadata(typeof(CompletionWindowBase), new FrameworkPropertyMetadata(ResizeMode.NoResize));
 		}
 		
 		/// <summary>
@@ -67,6 +68,7 @@ namespace ICSharpCode.AvalonEdit.CodeCompletion
 			StartOffset = EndOffset = this.TextArea.Caret.Offset;
 			
 			AttachEvents();
+			DwmDropShadow.DropShadowToWindow(this);
 		}
 		
 		#region Event Handlers

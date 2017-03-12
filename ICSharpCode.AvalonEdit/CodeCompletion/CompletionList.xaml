@@ -10,8 +10,6 @@
 					<Border Name="Bd"
 					        Background="{TemplateBinding Background}"
 					        BorderBrush="{TemplateBinding BorderBrush}"
-					        BorderThickness="{TemplateBinding BorderThickness}"
-					        Padding="{TemplateBinding Padding}"
 					        SnapsToDevicePixels="true">
 						<ContentPresenter
 							HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -39,12 +37,15 @@
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type cc:CompletionList}">
 					<cc:CompletionListBox x:Name="PART_ListBox"
+						BorderBrush="#FFE5C365"
 						ItemContainerStyle="{StaticResource CompletionListBoxItem}">
 						<ItemsControl.ItemTemplate>
 							<DataTemplate>
-								<StackPanel Orientation="Horizontal">
-									<Image Source="{Binding Image}" Width="16" Height="16" Margin="0,0,2,0"/>
-									<ContentControl Content="{Binding Content}"/>
+								<StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0" Orientation="Horizontal">
+									<Border Background="#FFFFFFFF">
+										<Image Width="16" Height="16" Margin="5,0,2,0" Source="{Binding Image}" />
+									</Border>
+									<ContentControl Margin="2" Content="{Binding Content}"/>
 								</StackPanel>
 							</DataTemplate>
 						</ItemsControl.ItemTemplate>

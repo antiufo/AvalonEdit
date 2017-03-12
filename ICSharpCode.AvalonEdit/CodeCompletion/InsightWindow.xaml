@@ -9,9 +9,9 @@
 		<Setter Property="SizeToContent" Value="WidthAndHeight" />
 		
 		<Setter Property="BorderThickness" Value="1" />
-		<Setter Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" />
-		<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" />
-		<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.InfoTextBrushKey}}" />
+		<Setter Property="Control.BorderBrush" Value="#FFCCCEDB" />
+		<Setter Property="Control.Background" Value="#FFE7E8EC" />
+		<Setter Property="Control.Foreground" Value="#FF1E1E1E" />
 		<Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" />
 		<Setter Property="FontSize" Value="{DynamicResource {x:Static SystemFonts.StatusFontSizeKey}}" />
 		<Setter Property="FontStyle" Value="{DynamicResource {x:Static SystemFonts.StatusFontStyleKey}}" />
