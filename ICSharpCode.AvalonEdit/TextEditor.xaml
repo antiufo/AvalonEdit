@@ -44,7 +44,6 @@
 				<SolidColorBrush Color="#ADD6FF" />
 			</Setter.Value>
 		</Setter>
-		<Setter Property="SelectionForeground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="{x:Type editing:TextArea}">
